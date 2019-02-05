@@ -43,7 +43,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.config
-            ext.betaDistributionGroupAliases = 'Sokol_Vov_MDS2019g'
+            ext.betaDistributionGroupAliases = 'mds2019'
 
         }
     }
