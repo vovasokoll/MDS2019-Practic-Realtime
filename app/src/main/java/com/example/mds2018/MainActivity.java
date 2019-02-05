@@ -6,8 +6,12 @@ import android.widget.TextView;
 
 
 
-import com.microsoft.appcenter.distribute.Distribute;
+import com.crashlytics.android.Crashlytics;
 import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.distribute.Distribute;
+
+import com.crashlytics.android.ndk.CrashlyticsNdk;
+import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView version = findViewById(R.id.version);
         version.setText(BuildConfig.VERSION_NAME);
 
+        Fabric.with(this, new Crashlytics(), new CrashlyticsNdk());
         AppCenter.start(getApplication(), APP_CENTER_KEY, Distribute.class);
     }
 }
