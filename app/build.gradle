@@ -22,10 +22,10 @@ keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 android {
     signingConfigs {
         config {
-            keyAlias 'myalias'
-            keyPassword 'Djdf1998'
-            storeFile file('/home/vovasokoll/AndroidStudioProjects/MDS2018/keystores/android.jks')
-            storePassword 'Djdf1998'
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile rootProject.file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
 
         }
     }
