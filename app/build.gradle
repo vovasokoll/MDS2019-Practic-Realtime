@@ -30,11 +30,11 @@ android {
     }
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.myapplication"
+        applicationId "com.example.mds2018"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 101
-        versionName "1.0.1"
+        versionCode 102
+        versionName "1.0.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
