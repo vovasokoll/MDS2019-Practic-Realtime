@@ -1,4 +1,4 @@
-package com.example.mds2018;
+package com.example.Sokol_Vov_MDS2019;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

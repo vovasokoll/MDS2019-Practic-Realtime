@@ -31,7 +31,7 @@ android {
     }
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.mds2018"
+        applicationId "com.example.Sokol_Vov_MDS2019"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 105
