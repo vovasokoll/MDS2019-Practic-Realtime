@@ -41,3 +41,18 @@ jobs:
           if [ "${CIRCLE_BRANCH}" != "master" ]; then
             bash ./scripts/deploy-fabric.sh
           fi
+  test:
+    docker:
+    - image: circleci/android:api-28-alpha
+        parallelism: 4
+        steps:
+        - run:
+            command: |
+              echo $(circleci tests glob "foo/**/*" "bar/**/*")
+              circleci tests glob "foo/**/*" "bar/**/*" | xargs -n 1 echo
+  workflows:
+    version: 2
+    build_and_test:
+      jobs:
+      - build
+      - test
