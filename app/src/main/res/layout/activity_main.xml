@@ -7,27 +7,42 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/infoTxtCredits"
         android:layout_width="wrap_content"
-
-        android:layout_height="15dp"
-        android:text="Hello"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:text="@string/href_github"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.261" />
+        app:layout_constraintVertical_bias="0.741" />
 
     <TextView
         android:id="@+id/version"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="current version"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.962" />
+        app:layout_constraintVertical_bias="0.962"
+        tools:text="current version" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="212dp"
+        android:layout_height="409dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:contentDescription="@string/myavatar"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/myphoto" />
 
 </android.support.constraint.ConstraintLayout>
