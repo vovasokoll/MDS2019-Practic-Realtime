@@ -42,7 +42,6 @@
         android:contentDescription="@string/myavatar"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView"
         app:srcCompat="@drawable/myphoto" />
 
 </android.support.constraint.ConstraintLayout>
