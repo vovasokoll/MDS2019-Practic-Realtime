@@ -42,6 +42,7 @@
         android:contentDescription="@string/myavatar"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/myphoto" />
+        app:srcCompat="@drawable/myphoto"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
