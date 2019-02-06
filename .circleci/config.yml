@@ -8,11 +8,14 @@ jobs:
       JVM_OPTS: -Xmx3200m
     steps:
     - checkout
-    - restore_cache:
-        key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
-    #      - run:
-    #         name: Chmod permissions #if permission for Gradlew Dependencies fail, use this.
-    #         command: sudo chmod +x ./gradlew
+    #    - restore_cache:
+    #        key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
+    - save_cache: # Caches dependencies with a cache key
+        # template for an environment variable,
+        # see circleci.com/docs/2.0/caching/
+        key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
+        paths:
+        - ~/circleci-demo-workflows
     - run:
         name: Download Dependencies
         command: ./gradlew androidDependencies
@@ -56,3 +59,6 @@ jobs:
       jobs:
       - build
       - test
+    steps:
+    - restore_cache: # Restores the cached dependency.
+        key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
