@@ -8,3 +8,4 @@ AppCenterMas - [![AppMas](https://build.appcenter.ms/v0.1/apps/5543c541-77f9-422
 AppCenterDev - [![AppDev](https://build.appcenter.ms/v0.1/apps/5543c541-77f9-4226-9bf6-d5dc49b48b12/branches/dev/badge?style=svg)](https://build.appcenter.ms/v0.1/apps/5543c541-77f9-4226-9bf6-d5dc49b48b12/branches/dev/badge)
 
 AppCenterFea - [![AppFea](https://build.appcenter.ms/v0.1/apps/5543c541-77f9-4226-9bf6-d5dc49b48b12/branches/feature/badge?style=svg)](https://build.appcenter.ms/v0.1/apps/5543c541-77f9-4226-9bf6-d5dc49b48b12/branches/feature/badge)
+
