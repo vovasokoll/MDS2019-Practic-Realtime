@@ -55,4 +55,4 @@ jobs:
       - test
     steps:
     - restore_cache: # Restores the cached dependency.
-        key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
+        key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
