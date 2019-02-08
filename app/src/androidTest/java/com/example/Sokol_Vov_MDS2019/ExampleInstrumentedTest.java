@@ -1,4 +1,4 @@
-package com.example.mds2018;
+package com.example.Sokol_Vov_MDS2019;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.mds2018", appContext.getPackageName());
+        assertEquals("com.example.Sokol_Vov_MDS2019", appContext.getPackageName());
     }
 }
